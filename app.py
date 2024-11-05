@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_df= pd.read('vehicles_us.csv')
+car_df= pd.read_csv('vehicles_us.csv')
 st.header('Proyecto del Sprint 6')
 hist_button= st.button('Crear Histograma')
 hist_button= st.button('Crear Gráfico de Dispersión')
