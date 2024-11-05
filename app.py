@@ -22,14 +22,13 @@ if disp_button:
 
 if disp_pg_button:
     st.write('Redirigiendo...')
-    fig1 = px.scatter(car_df, x="odometer", y="price")
-    fig1.show() # crear gráfico de dispersión
+    fig = px.scatter(car_df, x="odometer", y="price", color_discrete_sequence=["green"])
+    st.plotly_chart(fig, use_container_width=False)
 
 if hist_pg_button:
     st.write('Redirigiendo...')
-    fig2 = px.histogram(car_df, x="odometer") 
-    fig2.show() 
-
+    fig = px.scatter(car_df, x="odometer", color_discrete_sequence=["green"])
+    st.plotly_chart(fig, use_container_width=False)
 
 ##Sustituir los botones por casillas de verificación en streamlit
 #st.checkbox()
