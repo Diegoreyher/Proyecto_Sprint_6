@@ -27,7 +27,7 @@ if disp_pg_button:
 
 if hist_pg_button:
     st.write('Redirigiendo...')
-    fig = px.scatter(car_df, x="odometer", color_discrete_sequence=["green"])
+    fig = px.histogram(car_df, x="odometer", color_discrete_sequence=["green"])
     st.plotly_chart(fig, use_container_width=False)
 
 ##Sustituir los botones por casillas de verificación en streamlit
