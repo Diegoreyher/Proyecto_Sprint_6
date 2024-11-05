@@ -22,12 +22,12 @@ if disp_button:
 
 if disp_pg_button:
     st.write('Redirigiendo...')
-    fig1 = px.scatter(car_data, x="odometer", y="price")
+    fig1 = px.scatter(car_df, x="odometer", y="price")
     fig1.show() # crear gráfico de dispersión
 
 if hist_pg_button:
     st.write('Redirigiendo...')
-    fig2 = px.histogram(car_data, x="odometer") 
+    fig2 = px.histogram(car_df, x="odometer") 
     fig2.show() 
 
 
